@@ -57,13 +57,13 @@ const QuickLinks: React.FC<IQuickLinks> = ({ title, href }) => {
   )
 }
 
-interface ISocialMedia {
+export interface ISocialMedia {
   icon: string
   name: string
   url: string
 }
 
-const SocialMedia: React.FC<ISocialMedia> = ({ icon, name, url }) => {
+export const SocialMedia: React.FC<ISocialMedia> = ({ icon, name, url }) => {
   return (
     <Link href={url}>
       <div className="hover:cursor-pointer hover:opacity-90">
